@@ -43,4 +43,10 @@ def person(name, age, sex):
 person(sex="man", name="chiko", age=25)  # 可以自行决定函数参数顺序
 
 
-# 不定长参数 类似JS中的...args
+# 不定长参数 类似JS中的...arg
+
+
+# 匿名函数 只能是一个表达式 python对匿名函数的支持有点糟糕 匿名函数像个残疾版
+sum = lambda num1, num2: num1 + num2  # noqa: E731 忽略警告
+
+print(sum(2, 3))
