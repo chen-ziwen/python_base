@@ -1,3 +1,9 @@
+# from ..my_module.area import area_circle, area_quadrilateral
+
+# print(area_circle(2))
+# print(area_quadrilateral(2))
+
+
 # 两数之和 如果参数不是整形或者浮点型 抛出错误
 def sum(num1, num2):
     if not (isinstance(num1, (int, float)) and isinstance(num2, (int, float))):
@@ -50,3 +56,8 @@ person(sex="man", name="chiko", age=25)  # 可以自行决定函数参数顺序
 sum = lambda num1, num2: num1 + num2  # noqa: E731 忽略警告
 
 print(sum(2, 3))
+
+list2 = list(range(1, 101))
+# print(list2)
+for num in list2[::-1]:
+    print(num)
