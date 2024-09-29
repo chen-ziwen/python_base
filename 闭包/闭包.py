@@ -28,5 +28,4 @@ print(time)  # 0 全局变量没有被修改
 print(
     study.__closure__
 )  # (<cell at 0x00000250248B1E80: int object at 0x00000250243469D0>,)
-
 print(study.__closure__[0].cell_contents)  # 6 闭包保存的值
