@@ -9,9 +9,9 @@
 def prime_number(n):
     for i in range(2, n):
         p = True  # 未被整除
-        for j in range(2, i):  # 当j比i大时没必要判断
+        for j in range(2, i):  # 当j大于等于i时没必要判断
             if i % j == 0:
-                p = False  # 如果当前i能被除了1和自身的其他数整除
+                p = False  # 如果当前i能被除了1和自身的其他数整除 说明不是水仙花数
                 break
         if p:
             print(i)
