@@ -15,7 +15,3 @@ print(dict.values())
 
 # 以列表返回可遍历的(键, 值) 元组数组
 print(dict.items())
-
-
-# for i in len(dict):
-#     print(i)
