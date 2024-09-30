@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 
+# 当同一个类实例化出来的对象 调用同一个方法 但是方法展示出不同的结果 就叫多态
+
 
 class User:
     def __init__(self, name, age) -> None:
