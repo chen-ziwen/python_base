@@ -22,6 +22,9 @@ for i in range(3):  # 等同于range(0,3) 等同于js的 for(i=0; i<3; i++)
     print(i)
 for i in range(2, 8, 2):  # 等同于js的 for(i=2; i<8; i+=2)
     print(i)
+for i in range(100, 0, -2):  # 等同于js的 for(i=100; i>=0; i-=2)
+    print(i)
+
 
 """while循环"""
 count = 0
