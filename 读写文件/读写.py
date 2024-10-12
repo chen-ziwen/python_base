@@ -19,6 +19,7 @@ def read_file():
         print("读取文件时解码错误")
 
 
+# 读写二进制
 def read_binary():
     try:
         # 读取图片会读出一长串经过加密或编码的二进制数据

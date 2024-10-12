@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // nodejs和python请求成功 但是浏览器请求失败 因为涉及到跨域问题
+    const url = "https://fanyi.baidu.com/sug";
+    const s = prompt("请输入你要翻译的英文单词")
+
+    const data = {
+        kw: s
+    }
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams(data).toString()
+    }).then(data => data.json()).then(data => {
+        console.log(data);
+    })
+</script>
+
+</html>
