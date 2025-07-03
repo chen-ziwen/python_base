@@ -10,7 +10,7 @@ import time
 def decorator(func):
     def punch():
         t = time.strftime("%Y-%m-%d", time.localtime(time.time()))
-        func(t)  # 相当于把test函数作为参数传入执行
+        func(t)  # 相当于把 test 函数作为参数传入执行
 
     return punch  # 必须返回包装函数
 
