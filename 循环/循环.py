@@ -18,11 +18,11 @@ for i in tuplei:
     print(i)
 
 # range函数 三个参数
-for i in range(3):  # 等同于range(0,3) 等同于js的 for(i=0; i<3; i++)
+for i in range(3):  # 等同于 range(0,3) 等同于 js 的 for(i=0; i<3; i++)
     print(i)
-for i in range(2, 8, 2):  # 等同于js的 for(i=2; i<8; i+=2)
+for i in range(2, 8, 2):  # 等同于 js 的 for(i=2; i<8; i+=2)
     print(i)
-for i in range(100, 0, -2):  # 等同于js的 for(i=100; i>=0; i-=2)
+for i in range(100, 0, -2):  # 等同于 js 的 for(i=100; i>=0; i-=2)
     print(i)
 
 
